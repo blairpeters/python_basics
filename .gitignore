@@ -2,3 +2,6 @@
 .idea/
 *.mp3
 *.txt
+#how to exclude the requirements .txt file from the .ignore regulations of .txt files not being pushed
+!requirements.txt
+#pip freeze > requirements.txt
