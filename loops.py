@@ -23,13 +23,20 @@ students = [{"name":"Emerald Bowen","email":"ullamcorper.nisl@yahoo.org","countr
 #     if country == "Nigeria":
 #         print(f"Name is {name},my email is {email}, and citizen of {country},am {age} years old")
 
-total = 0
-for s in students:
-    age = s['age']
-    total = total + age
-
-avg = total/len(students)
-print(avg)
+# total = 0
+# for s in students:
+#     age = s['age']
+#     total = total + age
+#
+# avg = total/len(students)
+# print(avg)
 
 #lamda expressions
-#TODO sort the list / filter
+# sort the list / filter
+#inbuilt function called sorted that is used to sort a list---however we are going to add parameter of the dictionary to sort and a lambda function to target the age
+
+age_sorted = sorted(students, key = lambda s: s["age"], reverse = True)#reverse sorts from oldest to youngest
+for student in age_sorted:
+    print(student)
+
+#Get the oldest person from Nigeria
