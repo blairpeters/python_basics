@@ -54,4 +54,6 @@ area_circle = lambda radius: 3.14 * radius * radius
 print(dividing(5, 5))
 print(area_circle(5))
 
+# TODO functions as a parameter
+
 
