@@ -17,6 +17,9 @@ class Employee:
             print(self.gender)
             print("----------------")
 
+    def print_name(self):
+        print(self.full_names)
+
 class SalariedEmployee(Employee):
     def __init__(self, name:str, id_no:str, department:str, gender:str, salary:int, tenure:int):
         super().__init__(name, id_no, department, gender)
